@@ -1,4 +1,4 @@
 CompileFlags:
   CompilationDatabase: build/
   Add:
-    - -Iheaders
+    - -Iheader
