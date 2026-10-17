@@ -20,5 +20,16 @@ namespace Drone
             position += velocity + acceleration * deltatime * deltatime;
             acceleration = {};
         }
+
+        void set_velocity(glm::vec2 velocity)
+        {
+            old_position = position - velocity;
+        }
+
+        void set_position(glm::vec2 pos)
+        {
+            position = pos;
+            old_position = pos;
+        }
     };
 }
